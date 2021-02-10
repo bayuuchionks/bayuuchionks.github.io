@@ -1,0 +1,193 @@
+/* Global Style */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F6F6F6;
+}
+h1, h2, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+.h2-border-bottom {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.color-grey-bold {
+    font-size: small !important;
+    font-weight: bold;
+    color: #8A8A8A;
+    margin-top: 80px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Navbar Style */
+.navbar, .navbar .container-fluid {
+    padding: 0;
+    padding-left: 16px;
+}
+.navbar .container {
+    background-color: white;
+    padding-right: 0;
+}
+.navbar .btn-primary {
+    margin-left: 16px;
+    border-radius: 0;
+    height: 58px;
+    width: 100px;
+    background-color: #0033FF;
+    border: none;
+    color: white !important;
+}
+.navbar .btn-primary:hover {
+    background-color: #032eda;
+    color: white;
+}
+.navbar .btn-primary:focus {
+    background-color: #0033FF;
+    color: white;
+    box-shadow: none;
+}
+.navbar .nav-item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Jumbotron */
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    height: 560px;
+    background-color:black;
+}
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100%;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity:0.4;
+}
+.jumbotron .container {
+    z-index: 2;
+    margin-top: 124px;
+    position: relative;
+    text-align: center;
+}
+.jumbotron .btn-primary {
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: 0 solid white;
+}
+
+/* About Me */
+.about-me {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid grey;
+}
+.about-me-text p {
+    margin-top: 32px;
+}
+
+/* Portfolio */
+.portfolio {
+    margin-top: 60px;
+    margin-bottom: 160px;
+}
+.photo-section .title {
+    font-weight: bold;
+}
+.photo-section .date {
+    margin-top: 4px !important;
+    margin-bottom: 24px !important;
+}
+.photo-section .link {
+    color: black;
+}
+.btn-show-more {
+    margin-top: 72px;
+}
+.btn-show-more .btn-dark {
+    background-color: #111111;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.btn-show-more .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #252628;
+    color: #EEEEEE;
+}
+.footer h6 {
+    font-size: larger;
+}
+.footer  ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    padding: 4px 0;
+}
+.footer ul a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.footer ul a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel */
+.carousel-picture .carousel-item {
+    height: 520px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.carousel-control-next-photo,
+.carousel-control-prev-photo /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+/* Mobile Style */
+@media screen and (max-width: 992px) {
+    /* Header */
+    .navbar .btn-primary {
+        width: 100%;
+        margin: 8px 0;
+        height: 40px;
+    }
+    .navbar {
+        background-color: white;
+        padding: 16px;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        height: 640px;
+    }
+
+    /* About Me */
+    .about-me .about-me-text {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    /* Portfolio */
+    .photo-section .col-12 {
+        margin-bottom: 48px;
+    }
+    .btn-show-more {
+        margin-top: 32px;
+    }
+}
