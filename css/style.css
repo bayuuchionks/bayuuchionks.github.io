@@ -79,7 +79,7 @@ h1, h2, h6 {
 .jumbotron .btn-primary {
     border-radius: 4px;
     padding: 8px 16px;
-    background-color: white;
+    background-color: linear-gradient(to right, #007991, #78ffd6);
     color: black;
     border: 0 solid white;
 }
