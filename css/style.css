@@ -40,7 +40,7 @@ h1, h2, h6 {
     color: white !important;
 }
 .navbar .btn-primary:hover {
-    background-color: #032eda;
+    background-color: linear-gradient(to right, #007991, #78ffd6);
     color: white;
 }
 .navbar .btn-primary:focus {
